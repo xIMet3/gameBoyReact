@@ -77,9 +77,10 @@
 }
 
 .pantalla {
-    background-color: gray;
+    background-color: white;
     height: 100%;
     width: 76%;
+    border-radius: 0.1em;
 }
 
 .margenDer {
@@ -94,4 +95,28 @@
     width: 100%;
     border-bottom-left-radius: 0.6em;
     border-bottom-right-radius: 3em;
+}
+
+.parteCentral {
+    background-color: darkgoldenrod;
+    height: 30%;
+    display: flex;
+}
+
+.parteCruceta {
+    background-color: gray;
+    height: 100%;
+    width: 33.3%;
+}
+
+.parteLogo {
+    background-color: darkgreen;
+    height: 30%;
+    width: 33.3%;
+}
+
+.parteBotonera {
+    background-color: deeppink;
+    height: 100%;
+    width: 33.4%;
 }

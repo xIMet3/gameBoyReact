@@ -25,7 +25,11 @@ export const Consola = () => {
                     </div>
                     <div className="margenBot"></div>
                 </div>
-
+            </div>
+            <div className="parteCentral">
+                <div className="parteCruceta"></div>
+                <div className="parteLogo"></div>
+                <div className="parteBotonera"></div>
             </div>
 
         </div>
