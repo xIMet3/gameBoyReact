@@ -17,7 +17,13 @@ export const Consola = () => {
             </div>
             <div className="partePantalla">
                 <div className="pantallaExterior">
-                    
+                    <div className="margenTop"></div>
+                    <div className="pantallaCentral">
+                        <div className="margenIzq"></div>
+                        <div className="pantalla"></div>
+                        <div className="margenDer"></div>
+                    </div>
+                    <div className="margenBot"></div>
                 </div>
 
             </div>
