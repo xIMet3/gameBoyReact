@@ -10,7 +10,7 @@
     width: 98vw;
   }
 }
-
+/* ZONA BORDE ARRIBA */
 .bordeArriba {
     width: 100%;
     height: 6%;
@@ -34,6 +34,7 @@
     margin-left: 0.8em;
 }
 
+/* ZONA PANTALLA */
 .partePantalla {
     background-color: burlywood;
     height: 46%;
@@ -119,6 +120,31 @@
     background-color: deeppink;
     height: 100%;
     width: 33.4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vacio1 {
+    background-color: darkblue;
+    height: 33%;
+}
+
+.botoneraAB {
+    height: 67%;
+    width: 100%;
+    display: flex;
+}
+
+.botoneraB {
+    background-color: yellow;
+    height: 100%;
+    width: 50%;
+}
+
+.botoneraA {
+    background-color: lime;
+    height: 100%;
+    width: 50%;
 }
 
 .parteBaja {
@@ -130,7 +156,7 @@
     display: flex;
 }
 
-.vacio1 {
+.vacio2 {
     background-color: coral;
     height: 100%;
     width: 32.8%;

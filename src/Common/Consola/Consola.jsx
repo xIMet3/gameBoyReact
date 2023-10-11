@@ -29,10 +29,16 @@ export const Consola = () => {
             <div className="parteCentral">
                 <div className="parteCruceta"></div>
                 <div className="parteLogo"></div>
-                <div className="parteBotonera"></div>
+                <div className="parteBotonera">
+                    <div className="vacio1"></div>
+                    <div className="botoneraAB">
+                        <div className="botoneraB"></div>
+                        <div className="botoneraA"></div>
+                    </div>
+                </div>
             </div>
             <div className="parteBaja">
-                <div className="vacio1"></div>
+                <div className="vacio2"></div>
                 <div className="parteSelect"></div>
                 <div className="parteStart"></div>
                 <div className="parteAltavoz"></div>
