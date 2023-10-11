@@ -1,0 +1,7 @@
+.cuerpoConsola {
+    height: 85vh;
+    width: 35vw;
+    background-color: red;
+    border-radius: 1.5em;
+    border-bottom-right-radius: 6em;
+}
