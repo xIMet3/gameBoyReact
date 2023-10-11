@@ -104,129 +104,168 @@
 
 /* LOGO */
 .parteLogo {
-    background-color: darkgreen;
-    height: 25%;
-    width: 100%;
-    display: flex;
+  background-color: darkgreen;
+  height: 25%;
+  width: 100%;
+  display: flex;
 }
 
 .vacio3 {
-    background-color: #000;
-    height: 100%;
-    width: 33%;
+  background-color: #000;
+  height: 100%;
+  width: 33%;
 }
 
 .logo {
-    background-color: red;
-    height: 100%;
-    width: 34%;
+  background-color: red;
+  height: 100%;
+  width: 34%;
 }
 
 .vacio1 {
-    background-color:#000;
-    height: 100%;
-    width: 33%;
-  }
-
-
+  background-color: #000;
+  height: 100%;
+  width: 33%;
+}
 
 /* BOTONERA A Y B */
 .parteBotonera {
-   background-color: deeppink;
-   height: 75%;
-   display: flex;
-
+  background-color: deeppink;
+  height: 75%;
+  display: flex;
 }
 
 /* CRUCETA */
 .parteCruceta {
-    background-color: yellow;
-    height: 100%;
-    width: 50%;
-    display: flex;
+  background-color: yellow;
+  height: 100%;
+  width: 50%;
+  display: flex;
 }
 
 .cruceta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1em;
-    margin-top: 0.5em;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
 
-  .fila {
-    display: flex;
-    align-items: center;
+.fila {
+  display: flex;
+  align-items: center;
+}
+
+.boton {
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.2em solid #000;
+}
+
+.arriba {
+  border-bottom: none;
+  border-top-right-radius: 0.4em;
+  border-top-left-radius: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton.arriba::before {
+  content: "\25B3"; /* Código Unicode para el triángulo equilátero */
+  font-size: 2em;
+}
+
+.fila2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abajo {
+  border-top: none;
+  border-bottom-left-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton.abajo::before {
+    content: "\25B3"; /* Código Unicode para el triángulo equilátero */
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    transform: rotate(180deg); /* Rota el triángulo 180 grados */
+  }
+  
+
+.izquierda {
+  border-right: none;
+  border-bottom-left-radius: 0.4em;
+  border-top-left-radius: 0.4em;
+  margin-left: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton.izquierda::before {
+    content: "\25B3"; /* Código Unicode para el triángulo equilátero */
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    transform: rotate(-90deg); /* Rota el triángulo -90 grados */
+  }
+  
+
+.derecha {
+  border-left: none;
+  border-top-right-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton.derecha::before {
+    content: "\25B3"; /* Código Unicode para el triángulo equilátero */
+    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    transform: rotate(90deg);
+}
+
+.centro {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton.centro::before {
+    content: "\26AB"; /* Código Unicode para el círculo */
+    font-size: 1.5em; /* Ajusta el tamaño del círculo */
+  }
+  
+
+@media (max-width: 768px) {
+  .cruceta {
+    margin-top: 0em;
   }
 
   .boton {
-    width: 2.5em;
-    height: 2.5em;
-    border: 0.2em solid #000;
-    /* border-radius: 0.4em; */
+    width: 1.5em;
+    height: 1.5em;
   }
-
-  .arriba {
-    border-bottom: none;
-    border-top-right-radius: 0.4em;
-    border-top-left-radius: 0.4em;
-  }
-
-  .fila2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .abajo {
-    border-top: none;
-    border-bottom-left-radius: 0.4em;
-    border-bottom-right-radius: 0.4em;
-
-  }
-
-  .izquierda {
-    border-right: none;
-    border-bottom-left-radius: 0.4em;
-    border-top-left-radius: 0.4em;
-    margin-left: 0.5em;
-  }
-
-  .derecha {
-    border-left: none;
-    border-top-right-radius: 0.4em;
-    border-bottom-right-radius: 0.4em;
-    margin-right: 0.5em;
-  }
-
-  .centro {
-    background-color: #000;
-  }
-
-  @media (max-width: 768px) {
-    .cruceta {
-      margin-top: 0em;
-    }
-  
-    .boton {
-      width: 1.5em;
-      height: 1.5em;
-    }
-  }
-  
+}
 
 .botoneraAYB {
-    background-color: lime;
-    height: 100%;
-    width: 50%;
+  background-color: lime;
+  height: 100%;
+  width: 50%;
 }
 
 .vacio4 {
-    background-color: #000;
-    height: 100%;
-    width: 33%;
+  background-color: #000;
+  height: 100%;
+  width: 33%;
 }
-
 
 /* PARTE BAJA */
 .parteBaja {
@@ -239,7 +278,7 @@
 }
 
 .vacio2 {
-  background-color:#000 ;
+  background-color: #000;
   height: 100%;
   width: 32.8%;
   border-bottom-left-radius: 0.6em;
