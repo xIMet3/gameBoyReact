@@ -29,13 +29,15 @@ export const Consola = () => {
         </div>
         <div className="parteBotonera">
           <div className="parteCruceta">
-            <div className="cruceta">◦
+            <div className="cruceta">
+              ◦
               <div className="fila">
                 <div className="boton arriba"></div>
               </div>
-              <div className="fila"> ◦
-                <div className="boton izquierda"></div>
-                <div className="boton centro"></div>
+              <div className="fila">
+                {" "}
+                ◦<div className="boton izquierda"></div>
+                <div className="boton centro">⚫</div>
                 <div className="boton derecha"></div>◦
               </div>
               <div className="fila2">

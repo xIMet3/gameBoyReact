@@ -172,7 +172,7 @@
 }
 
 .boton.arriba::before {
-  content: "\25B3"; /* Código Unicode para el triángulo equilátero */
+  content: "\25B3";
   font-size: 2em;
 }
 
@@ -192,9 +192,9 @@
 }
 
 .boton.abajo::before {
-    content: "\25B3"; /* Código Unicode para el triángulo equilátero */
-    font-size: 2em; /* Ajusta el tamaño de la fuente */
-    transform: rotate(180deg); /* Rota el triángulo 180 grados */
+    content: "\25B3";
+    font-size: 2em;
+    transform: rotate(180deg);
   }
   
 
@@ -209,9 +209,9 @@
 }
 
 .boton.izquierda::before {
-    content: "\25B3"; /* Código Unicode para el triángulo equilátero */
-    font-size: 2em; /* Ajusta el tamaño de la fuente */
-    transform: rotate(-90deg); /* Rota el triángulo -90 grados */
+    content: "\25B3";
+    font-size: 2em;
+    transform: rotate(-90deg); 
   }
   
 
@@ -226,8 +226,8 @@
 }
 
 .boton.derecha::before {
-    content: "\25B3"; /* Código Unicode para el triángulo equilátero */
-    font-size: 2em; /* Ajusta el tamaño de la fuente */
+    content: "\25B3";
+    font-size: 2em;
     transform: rotate(90deg);
 }
 
@@ -238,11 +238,6 @@
   align-items: center;
 }
 
-.boton.centro::before {
-    content: "\26AB"; /* Código Unicode para el círculo */
-    font-size: 1.5em; /* Ajusta el tamaño del círculo */
-  }
-  
 
 @media (max-width: 768px) {
   .cruceta {
@@ -254,6 +249,8 @@
     height: 1.5em;
   }
 }
+
+
 
 .botoneraAYB {
   background-color: lime;
