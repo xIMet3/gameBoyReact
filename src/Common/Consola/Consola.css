@@ -12,172 +12,245 @@
 }
 /* ZONA BORDE ARRIBA */
 .bordeArriba {
-    width: 100%;
-    height: 6%;
-    background-color: blue;
-    border-top-right-radius: 0.6em;
-    border-top-left-radius: 0.6em;
+  width: 100%;
+  height: 6%;
+  background-color: blue;
+  border-top-right-radius: 0.6em;
+  border-top-left-radius: 0.6em;
 }
 
 .onOff {
-    height: 100%;
-    width: 50%;
-    background-color: blueviolet;
-    color: white;
-    display: flex;
-    align-items: center;
-    margin-left: 2em;
-    
+  height: 100%;
+  width: 50%;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
 }
 
 .on {
-    margin-left: 0.8em;
+  margin-left: 0.8em;
 }
 
 /* ZONA PANTALLA */
 .partePantalla {
-    background-color: burlywood;
-    height: 46%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  background-color: burlywood;
+  height: 46%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pantallaExterior {
-    background-color: grey;
-    height: 100%;
-    width: 90%;
-    border-radius: 0.6em;
-    border-bottom-right-radius: 2.7em;
-    flex-direction: column;
+  background-color: grey;
+  height: 100%;
+  width: 90%;
+  border-radius: 0.6em;
+  border-bottom-right-radius: 2.7em;
+  flex-direction: column;
 }
 
-
 .margenTop {
-    background-color: aqua;
-    width: 100%;
-    height: 9%;
-    border-top-left-radius: 0.6em;
-    border-top-right-radius: 0.6em;
+  background-color: aqua;
+  width: 100%;
+  height: 9%;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
 }
 
 .pantallaCentral {
-    background-color: cadetblue;
-    height: 80%;
-    width: 100%;
-    display: flex;
-    
+  background-color: cadetblue;
+  height: 80%;
+  width: 100%;
+  display: flex;
 }
 
 .margenIzq {
-    background-color:aqua;
-    height: 100%;
-    width: 12%;
+  background-color: aqua;
+  height: 100%;
+  width: 12%;
 }
 
 .pantalla {
-    background-color: white;
-    height: 100%;
-    width: 76%;
-    border-radius: 0.1em;
+  background-color: white;
+  height: 100%;
+  width: 76%;
+  border-radius: 0.1em;
 }
 
 .margenDer {
-    background-color:aqua;
-    height: 100%;
-    width: 12%;
+  background-color: aqua;
+  height: 100%;
+  width: 12%;
 }
 
 .margenBot {
-    background-color: aqua;
-    height: 11%;
-    width: 100%;
-    border-bottom-left-radius: 0.6em;
-    border-bottom-right-radius: 3em;
+  background-color: aqua;
+  height: 11%;
+  width: 100%;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 3em;
 }
 
+/* PARTE CENTRAL LOGO Y BOTONERAS */
 .parteCentral {
-    background-color: darkgoldenrod;
-    height: 30%;
-    display: flex;
+  background-color: darkgoldenrod;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
-.parteCruceta {
-    background-color: gray;
-    height: 100%;
-    width: 33.3%;
-}
-
+/* LOGO */
 .parteLogo {
     background-color: darkgreen;
-    height: 30%;
-    width: 33.3%;
+    height: 25%;
+    width: 100%;
+    display: flex;
 }
 
-.parteBotonera {
-    background-color: deeppink;
+.vacio3 {
+    background-color: #000;
     height: 100%;
-    width: 33.4%;
-    display: flex;
-    flex-direction: column;
+    width: 33%;
+}
+
+.logo {
+    background-color: red;
+    height: 100%;
+    width: 34%;
 }
 
 .vacio1 {
-    background-color: darkblue;
-    height: 33%;
+    background-color:#000;
+    height: 100%;
+    width: 33%;
+  }
+
+
+
+/* BOTONERA A Y B */
+.parteBotonera {
+   background-color: deeppink;
+   height: 75%;
+   display: flex;
+
 }
 
-.botoneraAB {
-    height: 67%;
-    width: 100%;
-    display: flex;
-}
-
-.botoneraB {
+/* CRUCETA */
+.parteCruceta {
     background-color: yellow;
     height: 100%;
     width: 50%;
+    display: flex;
 }
 
-.botoneraA {
+.cruceta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1em;
+    margin-top: 0.5em;
+  }
+
+  .fila {
+    display: flex;
+    align-items: center;
+  }
+
+  .boton {
+    width: 2.5em;
+    height: 2.5em;
+    border: 0.2em solid #000;
+    /* border-radius: 0.4em; */
+  }
+
+  .arriba {
+    border-bottom: none;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    /* margin-left: 0.5em; */
+  }
+
+  .fila2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .abajo {
+    border-top: none;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    /* margin-left: 0.5em; */
+
+  }
+
+  .izquierda {
+    border-right: none;
+    border-bottom-left-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    margin-left: 0.5em;
+  }
+
+  .derecha {
+    border-left: none;
+    border-top-right-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    margin-right: 0.5em;
+  }
+
+  .centro {
+    background-color: #000;
+  }
+
+.botoneraAYB {
     background-color: lime;
     height: 100%;
     width: 50%;
 }
 
+.vacio4 {
+    background-color: #000;
+    height: 100%;
+    width: 33%;
+}
+
+
+/* PARTE BAJA */
 .parteBaja {
-    background-color: orange;
-    height: 18%;
-    width: 100%;
-    border-bottom-left-radius: 0.6em;
-    border-bottom-right-radius: 4.5em;
-    display: flex;
+  background-color: orange;
+  height: 18%;
+  width: 100%;
+  border-bottom-left-radius: 0.6em;
+  border-bottom-right-radius: 4.5em;
+  display: flex;
 }
 
 .vacio2 {
-    background-color: coral;
-    height: 100%;
-    width: 32.8%;
-    border-bottom-left-radius: 0.6em;
+  background-color:#000 ;
+  height: 100%;
+  width: 32.8%;
+  border-bottom-left-radius: 0.6em;
 }
-
+/* BOTONES */
 .parteSelect {
-    background-color: indigo;
-    height: 100%;
-    width: 17%;
+  background-color: indigo;
+  height: 100%;
+  width: 17%;
 }
 
 .parteStart {
-    background-color: brown;
-    height: 100%;
-    width: 17%;
+  background-color: brown;
+  height: 100%;
+  width: 17%;
 }
 
+/* ALTAVOZ */
 .parteAltavoz {
-    background-color: aquamarine;
-    height: 100%;
-    width: 33.2%;
-    border-bottom-right-radius: 4.5em;
+  background-color: aquamarine;
+  height: 100%;
+  width: 33.2%;
+  border-bottom-right-radius: 4.5em;
 }
