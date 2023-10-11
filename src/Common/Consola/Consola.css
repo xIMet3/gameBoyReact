@@ -120,3 +120,38 @@
     height: 100%;
     width: 33.4%;
 }
+
+.parteBaja {
+    background-color: orange;
+    height: 18%;
+    width: 100%;
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 4.5em;
+    display: flex;
+}
+
+.vacio1 {
+    background-color: coral;
+    height: 100%;
+    width: 32.8%;
+    border-bottom-left-radius: 0.6em;
+}
+
+.parteSelect {
+    background-color: indigo;
+    height: 100%;
+    width: 17%;
+}
+
+.parteStart {
+    background-color: brown;
+    height: 100%;
+    width: 17%;
+}
+
+.parteAltavoz {
+    background-color: aquamarine;
+    height: 100%;
+    width: 33.2%;
+    border-bottom-right-radius: 4.5em;
+}
