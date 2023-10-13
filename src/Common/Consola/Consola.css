@@ -367,7 +367,7 @@
   height: 7em;
   width: 100%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
 }
 
@@ -382,10 +382,11 @@
   color: #131112;
   font-weight: bold;
   margin-top: 0.5em;
+  margin-left: 1.8em;
   
 }
 
-.botonB:hover {
+.B:hover {
   background-color: #4CAF50;
 }
 
@@ -393,6 +394,17 @@
 .vacio6 {
   background-color: aquamarine;
   height: 15%;
+}
+
+@media (max-width: 768px) {
+  .B {
+    height: 2.7em;
+    width: 2.7em;
+  }
+
+  .letraB {
+    margin-left: 1.1em;
+  }
 }
 
 /* PARTE BAJA */
