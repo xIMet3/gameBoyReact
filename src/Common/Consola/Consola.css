@@ -128,7 +128,7 @@
   width: 33%;
 }
 
-/* BOTONERA A Y B */
+/* CRUCETA Y BOTONERA A Y B */
 .parteBotonera {
   background-color: deeppink;
   height: 75%;
@@ -169,11 +169,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #242223;
+
 }
 
-.boton.arriba::before {
-  content: "\25B3";
-  font-size: 2em;
+.boton.arriba .triangulo {
+  margin-bottom: 0.5em;
 }
 
 .fila2 {
@@ -189,15 +190,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #242223;
+
 }
 
-.boton.abajo::before {
-    content: "\25B3";
-    font-size: 2em;
+  .boton.abajo .triangulo {
     transform: rotate(180deg);
-  }
+    margin-top: 0.5em;
+ }
   
-
 .izquierda {
   border-right: none;
   border-bottom-left-radius: 0.4em;
@@ -206,15 +207,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #242223;
+
 }
 
-.boton.izquierda::before {
-    content: "\25B3";
-    font-size: 2em;
-    transform: rotate(-90deg); 
-  }
+.boton.izquierda .triangulo {
+  transform: rotate(-90deg);
+  margin-right: 0.5em;
+}
   
-
 .derecha {
   border-left: none;
   border-top-right-radius: 0.4em;
@@ -223,20 +224,57 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #242223;
 }
 
-.boton.derecha::before {
-    content: "\25B3";
-    font-size: 2em;
-    transform: rotate(90deg);
+.boton.derecha .triangulo {
+  transform: rotate(90deg);
+  margin-left: 0.5em;
 }
+
+.triangulo {
+  border-style: solid;
+  border-width: 0 1em 1.8em 1em;
+  border-color: transparent transparent #131112 transparent;
+}
+
 
 .centro {
-  background-color: #000;
+  background-color: #242223 ;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
 }
+
+.boton.centro {
+  width: 2.5em;
+  height: 2.9em;
+  background-color: #242223;
+}
+
+.circulo {
+  background-color: black;
+  height: 1.7em;
+  width: 1.7em;
+  border-radius: 50%;
+}
+
+/* .boton.centro::before {
+  content: "\26AB";
+  font-size: 1.5em;
+} */
+
+
+
+
+.boton.arriba::before,
+.boton.izquierda::before,
+.boton.derecha::before,
+.boton.abajo::before {
+  color: black;
+}
+
 
 
 @media (max-width: 768px) {
@@ -251,17 +289,40 @@
 }
 
 
-
+/* BOTONES A Y B */
 .botoneraAYB {
   background-color: lime;
   height: 100%;
   width: 50%;
+  display: flex;
 }
 
 .vacio4 {
   background-color: #000;
   height: 100%;
   width: 33%;
+}
+
+.botoneraA {
+  background-color: darkgreen;
+  height: 100%;
+  width: 33.5%;
+}
+
+.vacio5 {
+  background-color: aquamarine;
+  height: 28%;
+}
+
+.botoneraB {
+  background-color: grey;
+  height: 100%;
+  width: 33.5%;
+}
+
+.vacio6 {
+  background-color:aquamarine;
+  height: 15%;
 }
 
 /* PARTE BAJA */

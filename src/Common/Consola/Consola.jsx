@@ -32,21 +32,40 @@ export const Consola = () => {
             <div className="cruceta">
               ◦
               <div className="fila">
-                <div className="boton arriba"></div>
+                <div className="boton arriba">
+                  <div className="triangulo"></div>
+                </div>
               </div>
               <div className="fila">
                 {" "}
-                ◦<div className="boton izquierda"></div>
-                <div className="boton centro">⚫</div>
-                <div className="boton derecha"></div>◦
+                ◦
+                <div className="boton izquierda">
+                  <div className="triangulo"></div>
+                </div>
+                <div className="boton centro">
+                  <div className="circulo"></div>
+                </div>
+                <div className="boton derecha">
+                  <div className="triangulo"></div>
+                </div>
+                ◦
               </div>
               <div className="fila2">
-                <div className="boton abajo"></div>◦
+                <div className="boton abajo">
+                  <div className="triangulo"></div>
+                </div>
+                ◦
               </div>
             </div>
           </div>
           <div className="botoneraAYB">
             <div className="vacio4"></div>
+            <div className="botoneraA">
+              <div className="vacio5">vacio</div>
+            </div>
+            <div className="botoneraB">
+              <div className="vacio6">vacio</div>
+            </div>
           </div>
         </div>
       </div>
