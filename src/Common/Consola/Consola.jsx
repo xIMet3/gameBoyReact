@@ -62,10 +62,14 @@ export const Consola = () => {
           </div>
           <div className="botoneraAYB">
             <div className="vacio4"></div>
-            <div className="botoneraA">
-              <div className="vacio5">vacio</div>
-            </div>
             <div className="botoneraB">
+              <div className="vacio5">vacio</div>
+              <div class="botonB">
+                <div className="B"></div>
+                <div className="letraB">B</div>
+              </div>
+            </div>
+            <div className="botoneraA">
               <div className="vacio6">vacio</div>
             </div>
           </div>

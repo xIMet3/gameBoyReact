@@ -316,8 +316,8 @@
   .boton.izquierda,
   .boton.derecha,
   .boton.abajo {
-    width: 1.4em; /* Ajusta el tamaño de los botones según tus necesidades */
-    height: 1.5em; /* Ajusta el tamaño de los botones según tus necesidades */
+    width: 1.4em;
+    height: 1.5em;
   }
 
   .boton.centro {
@@ -361,6 +361,34 @@
   height: 100%;
   width: 33.5%;
 }
+
+.botonB {
+  background-color: white;
+  height: 7em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.B {
+  background-color: #242223;
+  height: 4.2em;
+  width: 4.2em;
+  border-radius: 50%;
+}
+
+.letraB {
+  color: #131112;
+  font-weight: bold;
+  margin-top: 0.5em;
+  
+}
+
+.botonB:hover {
+  background-color: #4CAF50;
+}
+
 
 .vacio6 {
   background-color: aquamarine;
