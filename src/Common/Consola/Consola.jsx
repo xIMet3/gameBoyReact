@@ -24,7 +24,9 @@ export const Consola = () => {
       <div className="parteCentral">
         <div className="parteLogo">
           <div className="vacio3"></div>
-          <div className="logo"></div>
+          <div className="logo">
+            <div className="logoNintendo">Nintendoº</div>
+          </div>
           <div className="vacio1"></div>
         </div>
         <div className="parteBotonera">

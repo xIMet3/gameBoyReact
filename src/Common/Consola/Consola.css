@@ -120,6 +120,32 @@
   background-color: red;
   height: 100%;
   width: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+@font-face {
+  font-family: Prentendo;
+  src: url(../../../fonts/Pretendo.ttf);
+}
+
+.logoNintendo {
+  font-family: Pretendo;
+  font-size: 1.6em;
+  font-weight: bold;
+  background-color: white;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  padding: 0.1em;
+  width: 5em;
+  height: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black solid 0.2em;
 }
 
 .vacio1 {
@@ -170,7 +196,6 @@
   justify-content: center;
   align-items: center;
   background-color: #242223;
-
 }
 
 .boton.arriba .triangulo {
@@ -191,14 +216,13 @@
   justify-content: center;
   align-items: center;
   background-color: #242223;
-
 }
 
-  .boton.abajo .triangulo {
-    transform: rotate(180deg);
-    margin-top: 0.5em;
- }
-  
+.boton.abajo .triangulo {
+  transform: rotate(180deg);
+  margin-top: 0.5em;
+}
+
 .izquierda {
   border-right: none;
   border-bottom-left-radius: 0.4em;
@@ -208,14 +232,13 @@
   justify-content: center;
   align-items: center;
   background-color: #242223;
-
 }
 
 .boton.izquierda .triangulo {
   transform: rotate(-90deg);
   margin-right: 0.5em;
 }
-  
+
 .derecha {
   border-left: none;
   border-top-right-radius: 0.4em;
@@ -238,9 +261,8 @@
   border-color: transparent transparent #131112 transparent;
 }
 
-
 .centro {
-  background-color: #242223 ;
+  background-color: #242223;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,17 +287,12 @@
   font-size: 1.5em;
 } */
 
-
-
-
 .boton.arriba::before,
 .boton.izquierda::before,
 .boton.derecha::before,
 .boton.abajo::before {
   color: black;
 }
-
-
 
 @media (max-width: 768px) {
   .cruceta {
@@ -287,7 +304,6 @@
     height: 1.5em;
   }
 }
-
 
 /* BOTONES A Y B */
 .botoneraAYB {
@@ -321,7 +337,7 @@
 }
 
 .vacio6 {
-  background-color:aquamarine;
+  background-color: aquamarine;
   height: 15%;
 }
 
