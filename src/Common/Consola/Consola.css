@@ -33,6 +33,16 @@
   margin-left: 0.8em;
 }
 
+@media (max-width: 768px) {
+  .onOff {
+    font-size: 0.7em;
+  }
+
+  .on {
+    margin-left: 0.6em;
+  }
+}
+
 /* ZONA PANTALLA */
 .partePantalla {
   background-color: burlywood;
