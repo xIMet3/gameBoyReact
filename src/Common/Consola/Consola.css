@@ -282,11 +282,6 @@
   border-radius: 50%;
 }
 
-/* .boton.centro::before {
-  content: "\26AB";
-  font-size: 1.5em;
-} */
-
 .boton.arriba::before,
 .boton.izquierda::before,
 .boton.derecha::before,
@@ -297,13 +292,27 @@
 @media (max-width: 768px) {
   .cruceta {
     margin-top: 0em;
+    width: 70%;
   }
 
-  .boton {
-    width: 1.5em;
-    height: 1.5em;
+  .boton.arriba,
+  .boton.izquierda,
+  .boton.derecha,
+  .boton.abajo {
+    width: 1.4em; /* Ajusta el tamaño de los botones según tus necesidades */
+    height: 1.5em; /* Ajusta el tamaño de los botones según tus necesidades */
+  }
+
+  .boton.centro {
+    height: 1.85em;
+  }
+
+  .boton .triangulo {
+    border-width: 0 0.8em 1.4em 0.8em;
   }
 }
+  
+
 
 /* BOTONES A Y B */
 .botoneraAYB {
