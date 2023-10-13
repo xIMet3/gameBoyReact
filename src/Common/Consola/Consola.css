@@ -148,6 +148,13 @@
   border: black solid 0.2em;
 }
 
+@media (max-width: 768px) {
+  .logoNintendo {
+    font-size: large;
+  }
+ 
+}
+
 .vacio1 {
   background-color: #000;
   height: 100%;
