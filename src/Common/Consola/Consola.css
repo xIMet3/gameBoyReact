@@ -1,6 +1,6 @@
 .cuerpoConsola {
   height: 95vh;
-  width: 37vw;
+  width: 25vw;
   background-color: red;
   border-radius: 0.6em;
   border-bottom-right-radius: 4.5em;
@@ -351,9 +351,31 @@
   width: 33.5%;
 }
 
+.botonA {
+  background-color: blueviolet;
+  height: 7em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.A {
+  background-color: #242223;
+  height: 4.2em;
+  width: 4.2em;
+  border-radius: 50%;
+}
+
+.letraA {
+  color: #131112;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-left: 1.8em;
+}
+
 .vacio5 {
   background-color: aquamarine;
-  height: 28%;
+  height: 45%;
 }
 
 .botoneraB {
@@ -367,7 +389,6 @@
   height: 7em;
   width: 100%;
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
 }
 
@@ -393,17 +414,18 @@
 
 .vacio6 {
   background-color: aquamarine;
-  height: 15%;
+  height: 30%;
 }
 
 @media (max-width: 768px) {
-  .B {
+  .B, .A {
     height: 2.7em;
     width: 2.7em;
   }
 
-  .letraB {
+  .letraB, .letraA {
     margin-left: 1.1em;
+    margin-top: 0.3em;
   }
 }
 
