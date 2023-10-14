@@ -313,19 +313,20 @@
 @media (max-width: 768px) {
   .cruceta {
     margin-top: 0em;
-    width: 70%;
+    width: 60%;
   }
 
   .boton.arriba,
   .boton.izquierda,
   .boton.derecha,
   .boton.abajo {
-    width: 1.4em;
-    height: 1.5em;
+    width: 1.3em;
+    height: 1.4em;
   }
 
   .boton.centro {
-    height: 1.85em;
+    height: 1.8em;
+    width: 1.7em;
   }
 
   .boton .triangulo {
@@ -448,26 +449,59 @@
 .vacio2 {
   background-color: #000;
   height: 100%;
-  width: 32.8%;
+  width: 30%;
   border-bottom-left-radius: 0.6em;
 }
 /* BOTONES */
 .parteSelect {
   background-color: indigo;
   height: 100%;
-  width: 17%;
+  width: 20%;
+}
+
+.botonSelect {
+  background-color: white;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.select {
+  background-color: #131112;
+  height: 1.4em;
+  width: 3.6em;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.letraSelect {
+  margin-top: 0.4em;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
 .parteStart {
   background-color: brown;
   height: 100%;
-  width: 17%;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .select {
+    padding: 0.4em 0.5em;
+    width: 2em;
+  }
+
+  .letraSelect{
+    font-size: 0.9em;
+  }
 }
 
 /* ALTAVOZ */
 .parteAltavoz {
   background-color: aquamarine;
   height: 100%;
-  width: 33.2%;
+  width: 30%;
   border-bottom-right-radius: 4.5em;
 }

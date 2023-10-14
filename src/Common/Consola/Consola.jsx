@@ -81,7 +81,12 @@ export const Consola = () => {
       </div>
       <div className="parteBaja">
         <div className="vacio2"></div>
-        <div className="parteSelect"></div>
+        <div className="parteSelect">
+          <div className="botonSelect">
+            <div className="select"></div>
+            <div className="letraSelect">SELECT</div>
+          </div>
+        </div>
         <div className="parteStart"></div>
         <div className="parteAltavoz"></div>
       </div>
