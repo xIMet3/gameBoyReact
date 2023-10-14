@@ -1,6 +1,6 @@
 .cuerpoConsola {
   height: 95vh;
-  width: 25vw;
+  width: 37vw;
   background-color: red;
   border-radius: 0.6em;
   border-bottom-right-radius: 4.5em;
@@ -115,7 +115,7 @@
 /* LOGO */
 .parteLogo {
   background-color: darkgreen;
-  height: 25%;
+  height: 20%;
   width: 100%;
   display: flex;
 }
@@ -174,7 +174,7 @@
 /* CRUCETA Y BOTONERA A Y B */
 .parteBotonera {
   background-color: deeppink;
-  height: 75%;
+  height: 80%;
   display: flex;
 }
 
@@ -191,7 +191,6 @@
   flex-direction: column;
   align-items: center;
   margin-left: 1em;
-  margin-top: 0.5em;
 }
 
 .fila {
@@ -200,8 +199,8 @@
 }
 
 .boton {
-  width: 2.5em;
-  height: 2.5em;
+  width: 2.4em;
+  height: 2.4em;
   border: 0.2em solid #000;
 }
 
@@ -287,8 +286,8 @@
 }
 
 .boton.centro {
-  width: 2.5em;
-  height: 2.9em;
+  width: 2.9em;
+  height: 2.8em;
   background-color: #242223;
 }
 
@@ -304,6 +303,11 @@
 .boton.derecha::before,
 .boton.abajo::before {
   color: black;
+  cursor: pointer;
+}
+
+.boton.arriba:hover, .boton.abajo:hover, .boton.izquierda:hover, .boton.derecha:hover {
+  background-color: #464947;
 }
 
 @media (max-width: 768px) {
@@ -342,13 +346,13 @@
 .vacio4 {
   background-color: #000;
   height: 100%;
-  width: 33%;
+  width: 29%;
 }
 
 .botoneraA {
   background-color: darkgreen;
   height: 100%;
-  width: 33.5%;
+  width: 35.5%;
 }
 
 .botonA {
@@ -369,19 +373,20 @@
 .letraA {
   color: #131112;
   font-weight: bold;
-  margin-top: 0.5em;
-  margin-left: 1.8em;
+  font-size: x-large;
+  margin-top: 0.3em;
+  margin-left: 1.1em;
 }
 
 .vacio5 {
   background-color: aquamarine;
-  height: 45%;
+  height: 30%;
 }
 
 .botoneraB {
   background-color: grey;
   height: 100%;
-  width: 33.5%;
+  width: 35.5%;
 }
 
 .botonB {
@@ -402,19 +407,20 @@
 .letraB {
   color: #131112;
   font-weight: bold;
-  margin-top: 0.5em;
-  margin-left: 1.8em;
+  font-size: x-large;
+  margin-top: 0.3em;
+  margin-left: 1.1em;
   
 }
 
-.B:hover {
-  background-color: #4CAF50;
+.B:hover, .A:hover {
+  background-color: #464947;
 }
 
 
 .vacio6 {
   background-color: aquamarine;
-  height: 30%;
+  height: 15%;
 }
 
 @media (max-width: 768px) {
