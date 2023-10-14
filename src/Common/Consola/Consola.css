@@ -308,6 +308,7 @@
 
 .boton.arriba:hover, .boton.abajo:hover, .boton.izquierda:hover, .boton.derecha:hover {
   background-color: #464947;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -330,7 +331,8 @@
   }
 
   .boton .triangulo {
-    border-width: 0 0.8em 1.4em 0.8em;
+    border-width: 0 0.6em 1em 0.6em;
+    padding: 0.02em;
   }
 }
   
@@ -416,6 +418,7 @@
 
 .B:hover, .A:hover {
   background-color: #464947;
+  cursor: pointer;
 }
 
 
@@ -431,8 +434,10 @@
   }
 
   .letraB, .letraA {
-    margin-left: 1.1em;
+    margin-left: 0.95em;
     margin-top: 0.3em;
+    font-weight: 500;
+    font-size: large;
   }
 }
 
@@ -449,14 +454,14 @@
 .vacio2 {
   background-color: #000;
   height: 100%;
-  width: 30%;
+  width: 32%;
   border-bottom-left-radius: 0.6em;
 }
 /* BOTONES */
 .parteSelect {
   background-color: indigo;
   height: 100%;
-  width: 20%;
+  width: 18%;
 }
 
 .botonSelect {
@@ -484,16 +489,43 @@
 .parteStart {
   background-color: brown;
   height: 100%;
-  width: 20%;
+  width: 18%;
+}
+
+.botonStart {
+  background-color: white;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start {
+  background-color: #131112;
+  height: 1.4em;
+  width: 3.6em;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.letraStart {
+  margin-top: 0.4em;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.select:hover, .start:hover {
+  background-color: #464947;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .select {
-    padding: 0.4em 0.5em;
-    width: 2em;
+  .select, .start {
+    padding: 0.45em 0.5em;
+    width: 1.8em;
   }
 
-  .letraSelect{
+  .letraSelect, .letraStart {
     font-size: 0.9em;
   }
 }
@@ -502,6 +534,6 @@
 .parteAltavoz {
   background-color: aquamarine;
   height: 100%;
-  width: 30%;
+  width: 32%;
   border-bottom-right-radius: 4.5em;
 }
