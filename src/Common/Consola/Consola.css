@@ -560,7 +560,7 @@
 }
 
 .punto0 {
-  background-color: white;
+  background-color: transparent;
   border-radius: 50%;
   height: 0.6em;
   width: 0.6em;
@@ -578,5 +578,26 @@
   border-radius: 50%;
   height: 0.6em;
   width: 0.6em;
+}
 
+@media (max-width: 768px) {
+  .cuadriculaAltavoz {
+    margin-left: 0.4em;
+    margin-top: 0.3em;
+  }
+
+  .punto0 {
+    height: 0.3em;
+    width: 0.3em;
+  }
+
+  .punto1 {
+    height: 0.4em;
+    width: 0.4em;
+  }
+
+  .punto2 {
+    height: 0.4em;
+    width: 0.4em;
+  }
 }
