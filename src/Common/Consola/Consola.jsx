@@ -25,7 +25,7 @@ export const Consola = () => {
         <div className="parteLogo">
           <div className="vacio3"></div>
           <div className="logo">
-            <div className="logoNintendo">Nintendoº</div>
+            <div className="logoNintendo">Nintendo˚</div>
           </div>
           <div className="vacio1"></div>
         </div>
@@ -93,7 +93,68 @@ export const Consola = () => {
             <div className="letraStart">START</div>
           </div>
         </div>
-        <div className="parteAltavoz"></div>
+        <div className="parteAltavoz">
+          <div className="altavoz">
+            <div className="cuadriculaAltavoz">
+              {/* Fila 1 */}
+              <div className="punto0"></div>
+              <div className="punto0"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              {/* Fila 2 */}
+              <div className="punto0"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              {/* Fila 3 */}
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              {/* Fila 4 */}
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              {/* Fila 5 */}
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              {/* Fila 6 */}
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto0"></div>
+              {/* Fila 7 */}
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto2"></div>
+              <div className="punto1"></div>
+              <div className="punto0"></div>
+              <div className="punto0"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
