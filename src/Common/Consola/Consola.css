@@ -256,25 +256,26 @@
   width: 34%;
   display: flex;
   justify-content: center;
-  align-items: end;
+  margin-top: 2em;
 }
 
 .logoNintendo {
   font-family: sans-serif;
   font-size: 1.6em;
   font-weight: bold;
-  background-color: white;
+  background-color: #20a556;
   border-bottom-left-radius: 2em;
   border-bottom-right-radius: 2em;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
-  padding: 0.1em;
+  padding: 0.07em;
   width: 5em;
-  height: 0.8em;
+  height: 0.7em;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: black solid 0.2em;
+  border: #0a6c2f solid 0.2em;
+  color: #0a6c2f;
 }
 
 
@@ -285,8 +286,16 @@
 
 @media (max-width: 768px) {
   .logoNintendo {
-    font-size: large;
+    font-size: medium;
+    height: 0.7em;
+    padding-top: 0.3em;
+    width: 5.5em;
   }
+
+  .logo {
+    margin-top: 1.5em;
+  }
+  
  
 }
 /* CRUCETA Y BOTONERA A Y B */
@@ -667,7 +676,7 @@
 }
 
 .punto1 {
-  background-color: darkgreen;
+  background-color: #0a6c2f;
   border-radius: 50%;
   height: 0.6em;
   width: 0.6em;
