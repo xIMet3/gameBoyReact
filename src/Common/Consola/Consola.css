@@ -1,3 +1,8 @@
+@font-face {
+  font-family: GAMEBOY;
+  src: url(../../../fonts/gill-sans-mt-pro-medium-italic.otf);
+}
+
 .cuerpoConsola {
   height: 95vh;
   width: 37vw;
@@ -102,6 +107,26 @@
   width: 100%;
   border-bottom-left-radius: 0.6em;
   border-bottom-right-radius: 3em;
+  display: flex;
+}
+
+.vacio7 {
+  background-color: #000;
+  height: 100%;
+  width: 12.5%;
+  border-bottom-left-radius: 0.6em;
+}
+
+.logoGameBoy {
+  background-color: #464947;
+  height: 100%;
+  width: 25%;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 155%;
+  font-family: GAMEBOY;
 }
 
 /* PARTE CENTRAL LOGO Y BOTONERAS */
@@ -121,7 +146,7 @@
 }
 
 .vacio3 {
-  background-color: #000;
+  /* background-color: #000; */
   height: 100%;
   width: 33%;
 }
@@ -133,11 +158,6 @@
   display: flex;
   justify-content: center;
   align-items: end;
-}
-
-@font-face {
-  font-family: Prentendo;
-  src: url(../../../fonts/Pretendo.ttf);
 }
 
 .logoNintendo {
@@ -160,7 +180,7 @@
 
 
 .vacio1 {
-  background-color: #000;
+  /* background-color: #000; */
   height: 100%;
   width: 33%;
 }
@@ -375,7 +395,7 @@
 
 .letraA {
   color: #131112;
-  font-weight: bold;
+  font-weight: 500;
   font-size: x-large;
   margin-top: 0.3em;
   margin-left: 1.1em;
@@ -409,7 +429,7 @@
 
 .letraB {
   color: #131112;
-  font-weight: bold;
+  font-weight: 500;
   font-size: x-large;
   margin-top: 0.3em;
   margin-left: 1.1em;
@@ -457,7 +477,7 @@
   width: 32%;
   border-bottom-left-radius: 0.6em;
 }
-/* BOTONES */
+/* BOTONES SELECT Y START*/
 .parteSelect {
   background-color: indigo;
   height: 100%;
