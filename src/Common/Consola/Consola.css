@@ -6,7 +6,7 @@
 .cuerpoConsola {
   height: 95vh;
   width: 37vw;
-  background-color: red;
+  background-color: #20a556;
   border-radius: 0.6em;
   border-bottom-right-radius: 4.5em;
 
@@ -50,7 +50,6 @@
 
 /* ZONA PANTALLA */
 .partePantalla {
-  background-color: burlywood;
   height: 46%;
   width: 100%;
   display: flex;
@@ -59,7 +58,6 @@
 }
 
 .pantallaExterior {
-  background-color: grey;
   height: 100%;
   width: 90%;
   border-radius: 0.6em;
@@ -76,32 +74,28 @@
 }
 
 .pantallaCentral {
-  background-color: cadetblue;
   height: 80%;
   width: 100%;
   display: flex;
 }
 
 .margenIzq {
-  background-color: aqua;
+  background-color: #161616;
   height: 100%;
   width: 12%;
 }
 
 .vacio8 {
-  background-color: yellow;
   height: 17%;
 }
 
 .zonaLed {
-  background-color: darkblue;
   height: 12%;
   width: 100%;
   display: flex;
 }
 
 .parteLed {
-  background-color: #464947;
   height: 100%;
   width: 35%;
   display: flex;
@@ -118,7 +112,6 @@
 }
 
 .parteConexion {
-  background-color: darkgreen;
   height: 100%;
   width: 65%;
   color: white;
@@ -131,7 +124,6 @@
 }
 
 .zonaPower {
-  background-color: darkblue;
   height: 8%;
   width: 100%;
 }
@@ -242,7 +234,6 @@
 
 /* PARTE CENTRAL LOGO Y BOTONERAS */
 .parteCentral {
-  background-color: darkgoldenrod;
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -250,20 +241,17 @@
 
 /* LOGO */
 .parteLogo {
-  background-color: darkgreen;
   height: 20%;
   width: 100%;
   display: flex;
 }
 
 .vacio3 {
-  /* background-color: #000; */
   height: 100%;
   width: 33%;
 }
 
 .logo {
-  background-color: red;
   height: 100%;
   width: 34%;
   display: flex;
@@ -291,7 +279,6 @@
 
 
 .vacio1 {
-  /* background-color: #000; */
   height: 100%;
   width: 33%;
 }
@@ -304,14 +291,12 @@
 }
 /* CRUCETA Y BOTONERA A Y B */
 .parteBotonera {
-  background-color: deeppink;
   height: 80%;
   display: flex;
 }
 
 /* CRUCETA */
 .parteCruceta {
-  background-color: yellow;
   height: 100%;
   width: 50%;
   display: flex;
@@ -471,26 +456,22 @@
 
 /* BOTONES A Y B */
 .botoneraAYB {
-  background-color: lime;
   height: 100%;
   width: 50%;
   display: flex;
 }
 
 .vacio4 {
-  background-color: #000;
   height: 100%;
   width: 29%;
 }
 
 .botoneraA {
-  background-color: darkgreen;
   height: 100%;
   width: 35.5%;
 }
 
 .botonA {
-  background-color: blueviolet;
   height: 7em;
   width: 100%;
   display: flex;
@@ -513,18 +494,15 @@
 }
 
 .vacio5 {
-  background-color: aquamarine;
   height: 30%;
 }
 
 .botoneraB {
-  background-color: grey;
   height: 100%;
   width: 35.5%;
 }
 
 .botonB {
-  background-color: white;
   height: 7em;
   width: 100%;
   display: flex;
@@ -554,7 +532,6 @@
 
 
 .vacio6 {
-  background-color: aquamarine;
   height: 15%;
 }
 
@@ -574,7 +551,6 @@
 
 /* PARTE BAJA */
 .parteBaja {
-  background-color: orange;
   height: 18%;
   width: 100%;
   border-bottom-left-radius: 0.6em;
@@ -583,20 +559,17 @@
 }
 
 .vacio2 {
-  background-color: #000;
   height: 100%;
   width: 32%;
   border-bottom-left-radius: 0.6em;
 }
 /* BOTONES SELECT Y START*/
 .parteSelect {
-  background-color: indigo;
   height: 100%;
   width: 18%;
 }
 
 .botonSelect {
-  background-color: white;
   height: 50%;
   display: flex;
   align-items: center;
@@ -618,13 +591,11 @@
 }
 
 .parteStart {
-  background-color: brown;
   height: 100%;
   width: 18%;
 }
 
 .botonStart {
-  background-color: white;
   height: 50%;
   display: flex;
   align-items: center;
@@ -663,7 +634,6 @@
 
 /* ALTAVOZ */
 .parteAltavoz {
-  background-color: aquamarine;
   height: 100%;
   width: 32%;
   border-bottom-right-radius: 4.5em;
@@ -675,7 +645,6 @@
 .altavoz {
   height: 63%;
   width: 63%;
-  /* border-bottom-right-radius: 4.5em; */
 }
 
 .cuadriculaAltavoz {
@@ -698,7 +667,7 @@
 }
 
 .punto1 {
-  background-color: red;
+  background-color: darkgreen;
   border-radius: 50%;
   height: 0.6em;
   width: 0.6em;
