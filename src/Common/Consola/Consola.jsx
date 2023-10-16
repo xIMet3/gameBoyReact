@@ -24,6 +24,9 @@ export const Consola = () => {
                   <div className="conexion">) ) )</div>
                 </div>
               </div>
+              <div className="zonaPower">
+                <div className="power">POWER</div>
+              </div>
             </div>
             <div className="pantalla"></div>
             <div className="margenDer"></div>

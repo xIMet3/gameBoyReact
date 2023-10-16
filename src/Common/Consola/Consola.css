@@ -129,6 +129,23 @@
   margin-top: 0.3em;
   margin-left: 0.1em;
 }
+
+.zonaPower {
+  background-color: darkblue;
+  height: 8%;
+  width: 100%;
+}
+
+.power {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 0.65em;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .parteConexion {
     font-weight: 400;
@@ -137,6 +154,10 @@
   .conexion {
     margin-top: 0.25em;
     font-size: small;
+  }
+
+  .power {
+    font-size: 0.5em;
   }
 }
 
