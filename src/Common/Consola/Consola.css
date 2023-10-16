@@ -17,7 +17,7 @@
   background-color: #20a556;
   border-radius: 0.8em;
   border-bottom-right-radius: 4.5em;
-
+  
   @media (max-width: 768px) {
     height: 98vh;
     width: 98vw;
@@ -29,7 +29,6 @@
   height: 1%;
   width: 36.8%;
   display: flex;
-  
 }
 
 .vacio9 {
@@ -53,6 +52,16 @@
   border-top-left-radius: 100%;
 }
 
+@media (max-width: 768px) {
+  .parteBotonEncendido {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .vacio9 {
+    width: 12.5%;
+  }
+}
 /* ZONA BORDE ARRIBA */
 .bordeArriba {
   width: 100%;
