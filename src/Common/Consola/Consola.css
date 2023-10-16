@@ -110,7 +110,7 @@
 }
 
 .led {
-  background-color: red;
+  background-color: darkred;
   height: 30%;
   width: 60%;
   border-radius: 50%;
@@ -123,12 +123,21 @@
   width: 65%;
   color: white;
   font-weight: 600;
-  display: flex;
-  justify-content: center;
 }
 
 .conexion {
   margin-top: 0.3em;
+  margin-left: 0.1em;
+}
+@media (max-width: 768px) {
+  .parteConexion {
+    font-weight: 400;
+  }
+
+  .conexion {
+    margin-top: 0.25em;
+    font-size: small;
+  }
 }
 
 .pantalla {
