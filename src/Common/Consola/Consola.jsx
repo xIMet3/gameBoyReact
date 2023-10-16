@@ -14,7 +14,17 @@ export const Consola = () => {
         <div className="pantallaExterior">
           <div className="margenTop"></div>
           <div className="pantallaCentral">
-            <div className="margenIzq"></div>
+            <div className="margenIzq">
+              <div className="vacio8"></div>
+              <div className="zonaLed">
+                <div className="parteLed">
+                  <div className="led"></div>
+                </div>
+                <div className="parteConexion">
+                  <div className="conexion">) ) )</div>
+                </div>
+              </div>
+            </div>
             <div className="pantalla"></div>
             <div className="margenDer"></div>
           </div>
@@ -69,14 +79,14 @@ export const Consola = () => {
           <div className="botoneraAYB">
             <div className="vacio4"></div>
             <div className="botoneraB">
-              <div className="vacio5">vacio</div>
+              <div className="vacio5"></div>
               <div class="botonB">
                 <div className="B"></div>
                 <div className="letraB">B</div>
               </div>
             </div>
             <div className="botoneraA">
-              <div className="vacio6">vacio</div>
+              <div className="vacio6"></div>
               <div className="botonA">
                 <div className="A"></div>
                 <div className="letraA">A</div>
