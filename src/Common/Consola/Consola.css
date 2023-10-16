@@ -68,7 +68,7 @@
 }
 
 .margenTop {
-  background-color: aqua;
+  background-color: #474c52;
   width: 100%;
   height: 9%;
   border-top-left-radius: 0.6em;
@@ -89,20 +89,20 @@
 }
 
 .pantalla {
-  background-color: white;
+  background-color: #aac1a3;
   height: 100%;
   width: 76%;
   border-radius: 0.1em;
 }
 
 .margenDer {
-  background-color: aqua;
+  background-color: #161616;
   height: 100%;
   width: 12%;
 }
 
 .margenBot {
-  background-color: aqua;
+  background-color: #474c52;
   height: 11%;
   width: 100%;
   border-bottom-left-radius: 0.6em;
@@ -111,14 +111,14 @@
 }
 
 .vacio7 {
-  background-color: #000;
+  background-color: #474c52;
   height: 100%;
   width: 12.5%;
   border-bottom-left-radius: 0.6em;
 }
 
 .logoGameBoy {
-  background-color: #464947;
+  background-color: #474c52;
   height: 100%;
   width: 25%;
   color: white;
@@ -127,6 +127,33 @@
   font-weight: 600;
   font-size: 155%;
   font-family: GAMEBOY;
+}
+
+.logoPocket {
+  background-color: #474c52;
+  height: 100%;
+  width: 20%;
+  margin-left: 0.3em;
+}
+
+.pocket {
+  background-color: white;
+  height: 45%;
+  width: 55%;
+  margin-top: 0.7em;
+  font-size: small;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .logoGameBoy {
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* PARTE CENTRAL LOGO Y BOTONERAS */

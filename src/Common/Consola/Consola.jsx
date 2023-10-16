@@ -21,6 +21,9 @@ export const Consola = () => {
           <div className="margenBot">
             <div className="vacio7"></div>
             <div className="logoGameBoy">GAME BOY</div>
+            <div className="logoPocket">
+              <div className="pocket">pocket</div>
+            </div>
           </div>
         </div>
       </div>
