@@ -3,6 +3,13 @@ import "./Consola.css";
 
 export const Consola = () => {
   return (
+  <div className="paginaEntera">
+      <div className="parteBotonEncendido">
+        <div className="vacio9"></div>
+        <div className="botonEncendido">
+          <div className="encendido"></div>
+        </div>
+      </div>
     <div className="cuerpoConsola">
       <div className="bordeArriba">
         <div className="onOff">
@@ -176,5 +183,6 @@ export const Consola = () => {
         </div>
       </div>
     </div>
+  </div>  
   );
 };
