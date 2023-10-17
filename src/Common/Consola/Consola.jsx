@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Consola.css";
 
 export const Consola = () => {
+  const [encendidoActivado, setEncendidoActivado] = useState(false);
 
-  const handleClick = (button) => {
+  const handleClick = () => {
+    setEncendidoActivado(!encendidoActivado);
     console.log(`Se hizo clic en el botón ${button}`);
   };
 
@@ -12,7 +14,12 @@ export const Consola = () => {
       <div className="parteBotonEncendido">
         <div className="vacio9"></div>
         <div className="botonEncendido">
-          <div className="encendido"onClick={() => handleClick("Encendido")}></div>
+          <div
+            className={`encendido${
+              encendidoActivado ? " encendido-hover" : ""
+            }`}
+            onClick={() => handleClick("Encendido")}
+          ></div>
         </div>
       </div>
       <div className="cuerpoConsola">
@@ -65,26 +72,38 @@ export const Consola = () => {
               <div className="cruceta">
                 ◦
                 <div className="fila">
-                  <div className="boton arriba" onClick={() => handleClick("Arriba")}>
+                  <div
+                    className="boton arriba"
+                    onClick={() => handleClick("Arriba")}
+                  >
                     <div className="triangulo"></div>
                   </div>
                 </div>
                 <div className="fila">
                   {" "}
                   ◦
-                  <div className="boton izquierda" onClick={() => handleClick("Izquierda")}>
+                  <div
+                    className="boton izquierda"
+                    onClick={() => handleClick("Izquierda")}
+                  >
                     <div className="triangulo"></div>
                   </div>
                   <div className="boton centro">
                     <div className="circulo"></div>
                   </div>
-                  <div className="boton derecha" onClick={() => handleClick("Derecha")}>
+                  <div
+                    className="boton derecha"
+                    onClick={() => handleClick("Derecha")}
+                  >
                     <div className="triangulo"></div>
                   </div>
                   ◦
                 </div>
                 <div className="fila2">
-                  <div className="boton abajo" onClick={() => handleClick("Abajo")}>
+                  <div
+                    className="boton abajo"
+                    onClick={() => handleClick("Abajo")}
+                  >
                     <div className="triangulo"></div>
                   </div>
                   ◦
@@ -114,7 +133,10 @@ export const Consola = () => {
           <div className="vacio2"></div>
           <div className="parteSelect">
             <div className="botonSelect">
-              <div className="select" onClick={() => handleClick("Select")}></div>
+              <div
+                className="select"
+                onClick={() => handleClick("Select")}
+              ></div>
               <div className="letraSelect">SELECT</div>
             </div>
           </div>
