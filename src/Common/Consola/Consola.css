@@ -181,6 +181,12 @@
   border: black 0.15em solid;
 }
 
+.led.rojo-brillante {
+  background-color: red;
+  filter: brightness(150%);
+}
+
+
 .parteConexion {
   height: 100%;
   width: 65%;

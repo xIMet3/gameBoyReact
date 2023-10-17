@@ -37,7 +37,8 @@ export const Consola = () => {
                 <div className="vacio8"></div>
                 <div className="zonaLed">
                   <div className="parteLed">
-                    <div className="led"></div>
+                    {/* <div className="led"></div> */}
+                    <div className={`led${encendidoActivado ? " rojo-brillante " : ""}`}></div>
                   </div>
                   <div className="parteConexion">
                     <div className="conexion">) ) )</div>
