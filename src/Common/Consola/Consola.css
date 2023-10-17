@@ -17,7 +17,11 @@
   background-color: #20a556;
   border-radius: 0.8em;
   border-bottom-right-radius: 4.5em;
+  box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
   
+
   @media (max-width: 768px) {
     height: 98vh;
     width: 98vw;
@@ -33,13 +37,13 @@
 
 .vacio9 {
   height: 100%;
-  width: 11%;
+  width: 13%;
   border-top-left-radius: 0.8em;
 }
 
 .botonEncendido {
   height: 100%;
-  width: 9%;
+  width: 23%;
   display: flex;
   align-items: flex-end;
 }
@@ -47,7 +51,7 @@
 .encendido {
   background-color: #242223;
   height: 65%;
-  width: 50%;
+  width: 25%;
   border-top-right-radius: 100%;
   border-top-left-radius: 100%;
 }
@@ -58,8 +62,16 @@
     justify-content: flex-start;
   }
 
+  .botonEncendido {
+    width: 9%;
+  }
+
   .vacio9 {
-    width: 12.5%;
+    width: 13%;
+  }
+
+  .encendido {
+    width: 35%;
   }
 }
 /* ZONA BORDE ARRIBA */
@@ -68,16 +80,19 @@
   height: 5%;
   border-top-right-radius: 0.6em;
   border-top-left-radius: 0.6em;
+  box-shadow: 0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+-webkit-box-shadow: 0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+-moz-box-shadow: 0px 5px 10px -2px rgba(255,255,255,0.4) inset;
 }
 
 .onOff {
   height: 100%;
   width: 50%;
-  background-color: blueviolet;
-  color: white;
+  color: #0a6c2f;
   display: flex;
   align-items: center;
   margin-left: 2em;
+  font-size: larger;
 }
 
 .on {
@@ -132,7 +147,7 @@
 }
 
 .vacio8 {
-  height: 17%;
+  height: 11%;
 }
 
 .zonaLed {
@@ -162,6 +177,7 @@
   width: 65%;
   color: white;
   font-weight: 600;
+  font-size: 110.6%;
 }
 
 .conexion {
@@ -314,7 +330,7 @@
   border-bottom-right-radius: 2em;
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
-  padding: 0.07em;
+  padding: 0.1em;
   width: 5em;
   height: 0.75em;
   display: flex;
@@ -380,6 +396,9 @@
   justify-content: center;
   align-items: center;
   background-color: #242223;
+  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+-moz-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
 }
 
 .boton.arriba .triangulo {
@@ -416,6 +435,9 @@
   justify-content: center;
   align-items: center;
   background-color: #242223;
+  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+-moz-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
 }
 
 .boton.izquierda .triangulo {
@@ -432,6 +454,9 @@
   justify-content: center;
   align-items: center;
   background-color: #242223;
+  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+-moz-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
 }
 
 .boton.derecha .triangulo {
@@ -532,10 +557,16 @@
 }
 
 .A {
-  background-color: #242223;
+  background-color: black;
   height: 4.2em;
   width: 4.2em;
   border-radius: 50%;
+  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
+              0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
+                      0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+  -moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
+                   0px 5px 10px -2px rgba(255,255,255,0.4) inset;
 }
 
 .letraA {
@@ -564,11 +595,18 @@
 }
 
 .B {
-  background-color: #242223;
+  background-color: black;
   height: 4.2em;
   width: 4.2em;
   border-radius: 50%;
+  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
+              0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
+                      0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+  -moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
+                   0px 5px 10px -2px rgba(255,255,255,0.4) inset;
 }
+
 
 .letraB {
   color: #131112;
@@ -632,17 +670,21 @@
 }
 
 .select {
-  background-color: #131112;
+  background-color: black;
   height: 1.4em;
   width: 3.6em;
   border-radius: 2em;
   margin-top: 1.3em;
+  box-shadow: 0px 5px 10px -2px rgba(99,99,99,1) inset;
+-webkit-box-shadow: 0px 5px 10px -2px rgba(99,99,99,1) inset;
+-moz-box-shadow: 0px 5px 10px -2px rgba(99,99,99,1) inset;
 }
 
 .letraSelect {
   margin-top: 0.4em;
   font-weight: 600;
   font-family: sans-serif;
+  color: black;
 }
 
 .parteStart {
@@ -658,17 +700,24 @@
 }
 
 .start {
-  background-color: #131112;
+  background-color: black;
   height: 1.4em;
   width: 3.6em;
   border-radius: 2em;
   margin-top: 1.3em;
+  box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.59),
+              0px 5px 10px -2px rgba(99,99,99,1) inset;
+  -webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.59),
+                      0px 5px 10px -2px rgba(99,99,99,1) inset;
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.59),
+                   0px 5px 10px -2px rgba(99,99,99,1) inset;
 }
 
 .letraStart {
   margin-top: 0.4em;
   font-weight: 600;
   font-family: sans-serif;
+  color: black;
 }
 
 .select:hover,
@@ -712,8 +761,8 @@
   gap: 0;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  margin-top: 0.7em;
-  margin-left: 0.9em;
+  margin-top: 0.8em;
+  margin-left: 0.8em;
 }
 
 .punto0 {
@@ -735,6 +784,7 @@
   border-radius: 50%;
   height: 0.6em;
   width: 0.6em;
+  
 }
 
 @media (max-width: 768px) {
