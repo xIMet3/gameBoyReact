@@ -20,7 +20,6 @@
   box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
   -moz-box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
-  
 
   @media (max-width: 768px) {
     height: 98vh;
@@ -56,6 +55,11 @@
   border-top-left-radius: 100%;
 }
 
+.encendido:hover {
+  background-color: #464947;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .parteBotonEncendido {
     width: 100%;
@@ -80,9 +84,9 @@
   height: 5%;
   border-top-right-radius: 0.6em;
   border-top-left-radius: 0.6em;
-  box-shadow: 0px 5px 10px -2px rgba(255,255,255,0.4) inset;
--webkit-box-shadow: 0px 5px 10px -2px rgba(255,255,255,0.4) inset;
--moz-box-shadow: 0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+  box-shadow: 0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
+  -webkit-box-shadow: 0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
+  -moz-box-shadow: 0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
 }
 
 .onOff {
@@ -396,9 +400,9 @@
   justify-content: center;
   align-items: center;
   background-color: #242223;
-  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
--moz-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
 }
 
 .boton.arriba .triangulo {
@@ -435,9 +439,9 @@ box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
   justify-content: center;
   align-items: center;
   background-color: #242223;
-  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
--moz-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
 }
 
 .boton.izquierda .triangulo {
@@ -454,9 +458,9 @@ box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
   justify-content: center;
   align-items: center;
   background-color: #242223;
-  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
--moz-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
-box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
+  -webkit-box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 5px 5px -3px rgba(255, 255, 255, 0.25);
 }
 
 .boton.derecha .triangulo {
@@ -561,12 +565,12 @@ box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
   height: 4.2em;
   width: 4.2em;
   border-radius: 50%;
-  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
-              0px 5px 10px -2px rgba(255,255,255,0.4) inset;
-  -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
-                      0px 5px 10px -2px rgba(255,255,255,0.4) inset;
-  -moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
-                   0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
+  -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
 }
 
 .letraA {
@@ -599,14 +603,13 @@ box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
   height: 4.2em;
   width: 4.2em;
   border-radius: 50%;
-  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
-              0px 5px 10px -2px rgba(255,255,255,0.4) inset;
-  -webkit-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
-                      0px 5px 10px -2px rgba(255,255,255,0.4) inset;
-  -moz-box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.59),
-                   0px 5px 10px -2px rgba(255,255,255,0.4) inset;
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
+  -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(255, 255, 255, 0.4) inset;
 }
-
 
 .letraB {
   color: #131112;
@@ -675,9 +678,12 @@ box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
   width: 3.6em;
   border-radius: 2em;
   margin-top: 1.3em;
-  box-shadow: 0px 5px 10px -2px rgba(99,99,99,1) inset;
--webkit-box-shadow: 0px 5px 10px -2px rgba(99,99,99,1) inset;
--moz-box-shadow: 0px 5px 10px -2px rgba(99,99,99,1) inset;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(99, 99, 99, 1) inset;
+  -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(99, 99, 99, 1) inset;
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(99, 99, 99, 1) inset;
 }
 
 .letraSelect {
@@ -705,12 +711,12 @@ box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
   width: 3.6em;
   border-radius: 2em;
   margin-top: 1.3em;
-  box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.59),
-              0px 5px 10px -2px rgba(99,99,99,1) inset;
-  -webkit-box-shadow: 0px 2px 2px 1px rgba(0,0,0,0.59),
-                      0px 5px 10px -2px rgba(99,99,99,1) inset;
-  -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.59),
-                   0px 5px 10px -2px rgba(99,99,99,1) inset;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(99, 99, 99, 1) inset;
+  -webkit-box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(99, 99, 99, 1) inset;
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.59),
+    0px 5px 10px -2px rgba(99, 99, 99, 1) inset;
 }
 
 .letraStart {
@@ -784,7 +790,6 @@ box-shadow: inset 0px 5px 5px -3px rgba(255,255,255,0.25);
   border-radius: 50%;
   height: 0.6em;
   width: 0.6em;
-  
 }
 
 @media (max-width: 768px) {

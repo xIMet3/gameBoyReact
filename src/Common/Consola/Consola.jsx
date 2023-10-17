@@ -2,12 +2,17 @@ import React from "react";
 import "./Consola.css";
 
 export const Consola = () => {
+
+  const handleClick = (button) => {
+    console.log(`Se hizo clic en el botón ${button}`);
+  };
+
   return (
     <div className="paginaEntera">
       <div className="parteBotonEncendido">
         <div className="vacio9"></div>
         <div className="botonEncendido">
-          <div className="encendido"></div>
+          <div className="encendido"onClick={() => handleClick("Encendido")}></div>
         </div>
       </div>
       <div className="cuerpoConsola">
@@ -60,26 +65,26 @@ export const Consola = () => {
               <div className="cruceta">
                 ◦
                 <div className="fila">
-                  <div className="boton arriba">
+                  <div className="boton arriba" onClick={() => handleClick("Arriba")}>
                     <div className="triangulo"></div>
                   </div>
                 </div>
                 <div className="fila">
                   {" "}
                   ◦
-                  <div className="boton izquierda">
+                  <div className="boton izquierda" onClick={() => handleClick("Izquierda")}>
                     <div className="triangulo"></div>
                   </div>
                   <div className="boton centro">
                     <div className="circulo"></div>
                   </div>
-                  <div className="boton derecha">
+                  <div className="boton derecha" onClick={() => handleClick("Derecha")}>
                     <div className="triangulo"></div>
                   </div>
                   ◦
                 </div>
                 <div className="fila2">
-                  <div className="boton abajo">
+                  <div className="boton abajo" onClick={() => handleClick("Abajo")}>
                     <div className="triangulo"></div>
                   </div>
                   ◦
@@ -91,14 +96,14 @@ export const Consola = () => {
               <div className="botoneraB">
                 <div className="vacio5"></div>
                 <div class="botonB">
-                  <div className="B"></div>
+                  <div className="B" onClick={() => handleClick("B")}></div>
                   <div className="letraB">B</div>
                 </div>
               </div>
               <div className="botoneraA">
                 <div className="vacio6"></div>
                 <div className="botonA">
-                  <div className="A"></div>
+                  <div className="A" onClick={() => handleClick("A")}></div>
                   <div className="letraA">A</div>
                 </div>
               </div>
@@ -109,13 +114,13 @@ export const Consola = () => {
           <div className="vacio2"></div>
           <div className="parteSelect">
             <div className="botonSelect">
-              <div className="select"></div>
+              <div className="select" onClick={() => handleClick("Select")}></div>
               <div className="letraSelect">SELECT</div>
             </div>
           </div>
           <div className="parteStart">
             <div className="botonStart">
-              <div className="start"></div>
+              <div className="start" onClick={() => handleClick("Start")}></div>
               <div className="letraStart">START</div>
             </div>
           </div>
