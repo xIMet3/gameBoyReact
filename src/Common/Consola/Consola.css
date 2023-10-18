@@ -36,7 +36,7 @@
 
 .vacio9 {
   height: 100%;
-  width: 13%;
+  width: 18%;
   border-top-left-radius: 0.8em;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .encendido-hover {
-  transform: translateX(1.3em);
+  transform: translateX(1.7em);
 }
 
 @media (max-width: 768px) {
