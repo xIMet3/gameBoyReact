@@ -235,6 +235,16 @@
   height: 100%;
   width: 76%;
   border-radius: 0.1em;
+  position: relative;
+}
+
+.encendidoGif {
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /*
 }
 
 .margenDer {

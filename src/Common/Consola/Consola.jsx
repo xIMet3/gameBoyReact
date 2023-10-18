@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Consola.css";
+import { useNavigate } from "react-router-dom";
+
+import encendidoGif from "../../../Gif/encendidoGif.gif";
 
 export const Consola = () => {
   const [encendidoActivado, setEncendidoActivado] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setEncendidoActivado(!encendidoActivado);
-    console.log(`Se hizo clic en el botón ${button}`);
+    playEncendidoGif();
+  };
+
+  useEffect(() => {
+    // Reproduce el GIF cuando encendidoActivado cambie
+    if (encendidoActivado) {
+      playEncendidoGif();
+    }
+  }, [encendidoActivado]);
+
+  const playEncendidoGif = () => {
+    const gifElement = document.getElementById("encendidoGif");
+    gifElement.style.display = "block";
+    setTimeout(() => {
+      gifElement.style.display = "none";
+    }, 1300);
   };
 
   return (
@@ -38,7 +57,11 @@ export const Consola = () => {
                 <div className="zonaLed">
                   <div className="parteLed">
                     {/* <div className="led"></div> */}
-                    <div className={`led${encendidoActivado ? " rojo-brillante " : ""}`}></div>
+                    <div
+                      className={`led${
+                        encendidoActivado ? " rojo-brillante " : ""
+                      }`}
+                    ></div>
                   </div>
                   <div className="parteConexion">
                     <div className="conexion">) ) )</div>
@@ -48,7 +71,15 @@ export const Consola = () => {
                   <div className="power">POWER</div>
                 </div>
               </div>
-              <div className="pantalla"></div>
+              <div className="pantalla">
+                <img
+                  id="encendidoGif"
+                  className="encendidoGif"
+                  src={encendidoGif}
+                  alt="Encendido GIF"
+                />
+              </div>
+
               <div className="margenDer"></div>
             </div>
             <div className="margenBot">
@@ -115,7 +146,7 @@ export const Consola = () => {
               <div className="vacio4"></div>
               <div className="botoneraB">
                 <div className="vacio5"></div>
-                <div class="botonB">
+                <div className="botonB">
                   <div className="B" onClick={() => handleClick("B")}></div>
                   <div className="letraB">B</div>
                 </div>
