@@ -13,7 +13,7 @@
 
 .cuerpoConsola {
   height: 96%;
-  width: 37%;
+  width: 30%;
   background-color: #20a556;
   border-radius: 0.8em;
   border-bottom-right-radius: 4.5em;
@@ -72,15 +72,19 @@
   }
 
   .botonEncendido {
-    width: 9%;
+    width: 12%;
   }
 
   .vacio9 {
-    width: 13%;
+    width: 12.5%;
   }
 
   .encendido {
     width: 35%;
+  }
+
+  .encendido-hover {
+    transform: translateX(0.9em);
   }
 }
 /* ZONA BORDE ARRIBA */
@@ -272,20 +276,20 @@
 .logoGameBoy {
   background-color: #161616;
   height: 100%;
-  width: 25%;
+  width: 22%;
   color: white;
   display: flex;
   align-items: center;
   font-weight: 600;
   font-size: 155%;
   font-family: GAMEBOY;
+  margin: 0;
 }
 
 .logoPocket {
   background-color: #161616;
   height: 100%;
   width: 20%;
-  margin-left: 0.3em;
 }
 
 .pocket {
@@ -297,14 +301,15 @@
   font-weight: bold;
   font-style: italic;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  /* flex-direction: column; */
+  align-items: flex-end;
   justify-content: flex-start;
 }
 
 @media (max-width: 768px) {
   .logoGameBoy {
     font-size: 110%;
+    width: 27%;
     display: flex;
     justify-content: center;
   }

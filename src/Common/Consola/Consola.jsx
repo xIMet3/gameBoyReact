@@ -31,6 +31,7 @@ export const Consola = () => {
     <div className="paginaEntera">
       <div className="parteBotonEncendido">
         <div className="vacio9"></div>
+        {/* Boton de encender la consola */}
         <div className="botonEncendido">
           <div
             className={`encendido${
