@@ -1,32 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Consola.css";
 import { useNavigate } from "react-router-dom";
-
 import encendidoGif from "../../../Gif/encendidoGif.gif";
 
 export const Consola = () => {
   const [encendidoActivado, setEncendidoActivado] = useState(false);
+  const [ledRojo, setLedRojo] = useState(false);
+  const [gifVisible, setGifVisible] = useState(false);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    setEncendidoActivado(!encendidoActivado);
-    playEncendidoGif();
-  };
-
-  useEffect(() => {
-    // Reproduce el GIF cuando encendidoActivado cambie
     if (encendidoActivado) {
-      playEncendidoGif();
+      setEncendidoActivado(false);
+      setLedRojo(false); // Cambia el LED a darkred cuando se apaga la consola
+      setGifVisible(false); // Oculta el gif al apagar la consola
+    } else {
+      setEncendidoActivado(true);
+      setLedRojo(true);
+      setGifVisible(true);
+  
+      // Después de 1300ms, ocultar el gif
+      setTimeout(() => {
+        setGifVisible(false);
+      }, 2300);
     }
-  }, [encendidoActivado]);
-
-  const playEncendidoGif = () => {
-    const gifElement = document.getElementById("encendidoGif");
-    gifElement.style.display = "block";
-    setTimeout(() => {
-      gifElement.style.display = "none";
-    }, 1300);
   };
+  
 
   return (
     <div className="paginaEntera">
@@ -56,11 +55,8 @@ export const Consola = () => {
                 <div className="vacio8"></div>
                 <div className="zonaLed">
                   <div className="parteLed">
-                    {/* <div className="led"></div> */}
                     <div
-                      className={`led${
-                        encendidoActivado ? " rojo-brillante " : ""
-                      }`}
+                      className={`led${ledRojo ? " rojo-brillante" : ""}`}
                     ></div>
                   </div>
                   <div className="parteConexion">
@@ -72,12 +68,14 @@ export const Consola = () => {
                 </div>
               </div>
               <div className="pantalla">
-                <img
-                  id="encendidoGif"
-                  className="encendidoGif"
-                  src={encendidoGif}
-                  alt="Encendido GIF"
-                />
+                {ledRojo && gifVisible && (
+                  <img
+                    id="encendidoGif"
+                    className="encendidoGif"
+                    src={encendidoGif}
+                    alt="Encendido GIF"
+                  />
+                )}
               </div>
 
               <div className="margenDer"></div>
