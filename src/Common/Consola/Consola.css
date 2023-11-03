@@ -9,6 +9,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-image: url(../../../Img/estadioPokemon.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .cuerpoConsola {
@@ -20,6 +23,7 @@
   box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
   -moz-box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.79);
+  margin-left: 5%;
 
   @media (max-width: 768px) {
     height: 98vh;
@@ -36,7 +40,7 @@
 
 .vacio9 {
   height: 100%;
-  width: 18%;
+  width: 25%;
   border-top-left-radius: 0.8em;
 }
 
@@ -190,7 +194,6 @@
   filter: brightness(150%);
 }
 
-
 .parteConexion {
   height: 100%;
   width: 65%;
@@ -243,12 +246,12 @@
 }
 
 .encendidoGif {
-  position: absolute; 
+  position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .margenDer {

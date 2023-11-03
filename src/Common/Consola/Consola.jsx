@@ -9,29 +9,33 @@ export const Consola = () => {
   const [gifVisible, setGifVisible] = useState(false);
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    if (encendidoActivado) {
-      setEncendidoActivado(false);
-      setLedRojo(false); // Cambia el LED a darkred cuando se apaga la consola
-      setGifVisible(false); // Oculta el gif al apagar la consola
-    } else {
-      setEncendidoActivado(true);
-      setLedRojo(true);
-      setGifVisible(true);
-  
-      // Después de 1300ms, ocultar el gif
-      setTimeout(() => {
+  const handleClick = (tipo) => {
+    if (tipo === "Encendido") { // Verificar si el clic proviene del botón de encendido
+      if (encendidoActivado) {
+        setEncendidoActivado(false);
+        // Cambia el LED a darkred cuando se apaga la consola
+        setLedRojo(false);
+        // Oculta el gif al apagar la consola
         setGifVisible(false);
-      }, 2300);
+      } else {
+        setEncendidoActivado(true);
+        setLedRojo(true);
+        setGifVisible(true);
+  
+        // Después de 300ms, oculta el gif
+        setTimeout(() => {
+          setGifVisible(false);
+        }, 2300);
+      }
     }
   };
   
 
   return (
     <div className="paginaEntera">
+      {/* Boton de encender la consola */}
       <div className="parteBotonEncendido">
         <div className="vacio9"></div>
-        {/* Boton de encender la consola */}
         <div className="botonEncendido">
           <div
             className={`encendido${
@@ -41,6 +45,7 @@ export const Consola = () => {
           ></div>
         </div>
       </div>
+      {/* Consola entera */}
       <div className="cuerpoConsola">
         <div className="bordeArriba">
           <div className="onOff">
@@ -48,6 +53,7 @@ export const Consola = () => {
             <div className="on">● ON</div>
           </div>
         </div>
+        {/* Zona pantalla */}
         <div className="partePantalla">
           <div className="pantallaExterior">
             <div className="margenTop"></div>
@@ -68,6 +74,7 @@ export const Consola = () => {
                   <div className="power">POWER</div>
                 </div>
               </div>
+              {/* Pantalla */}
               <div className="pantalla">
                 {ledRojo && gifVisible && (
                   <img
@@ -90,6 +97,7 @@ export const Consola = () => {
             </div>
           </div>
         </div>
+        {/* Zona central con logo nintendo, cruceta y botones A y B */}
         <div className="parteCentral">
           <div className="parteLogo">
             <div className="vacio3"></div>
@@ -99,6 +107,7 @@ export const Consola = () => {
             <div className="vacio1"></div>
           </div>
           <div className="parteBotonera">
+            {/* Cruceta */}
             <div className="parteCruceta">
               <div className="cruceta">
                 ◦
@@ -141,6 +150,7 @@ export const Consola = () => {
                 </div>
               </div>
             </div>
+            {/* Zona botones A y B */}
             <div className="botoneraAYB">
               <div className="vacio4"></div>
               <div className="botoneraB">
@@ -160,6 +170,7 @@ export const Consola = () => {
             </div>
           </div>
         </div>
+        {/* Zona botones Start, Stop y el altavoz */}
         <div className="parteBaja">
           <div className="vacio2"></div>
           <div className="parteSelect">
@@ -177,6 +188,7 @@ export const Consola = () => {
               <div className="letraStart">START</div>
             </div>
           </div>
+          {/* Altavoz */}
           <div className="parteAltavoz">
             <div className="altavoz">
               <div className="cuadriculaAltavoz">
