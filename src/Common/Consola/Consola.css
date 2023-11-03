@@ -3,6 +3,12 @@
   src: url(../../../fonts/gill-sans-mt-pro-medium-italic.otf);
 }
 
+@font-face {
+  font-family: GameBoyPixel;
+  src: url(../../../fonts/Early\ GameBoy.ttf);
+}
+
+
 .paginaEntera {
   height: 100vh;
   width: 100vw;
@@ -246,6 +252,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  font-family: GameBoyPixel;
 }
 
 .encendidoGif {
@@ -255,6 +262,10 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+.juego {
+  margin-left: 1em;
 }
 
 .margenDer {
