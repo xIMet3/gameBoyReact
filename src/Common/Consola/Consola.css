@@ -243,6 +243,9 @@
   width: 76%;
   border-radius: 0.1em;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .encendidoGif {
