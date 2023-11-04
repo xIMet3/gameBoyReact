@@ -28,7 +28,7 @@
 
 ##### <span style="font-family:Aria-lNarrow">Este proyecto se basa en una réplica de la GameBoy Pocket utilizando React y Css.
 
-<br><br><br><br>
+<br><br>
 
 ### <span style= "color:#d11911">Acerca de<a id="Acerca"></a>
 
@@ -37,7 +37,7 @@
 
 ![Caja-GameBoy](./Img/gameBoyOriginal4.jpeg)
 
-<br><br><br><br>
+<br><br>
 
 ### <span style= "color:#d11911">Desarrollo<a id="Desarrollo"></a>
 
@@ -68,8 +68,6 @@
 
 ###### <span style="font-family:Aria-lNarrow">Se abrirá el navegador con el contenido del proyecto.
 
-
-
 <br>
 
 ### <span style= "color:#d11911">Funcionamiento
@@ -79,8 +77,10 @@
 
 ##### <span style="font-family:Aria-lNarrow">1º- Pulsar el botón de encender (Parte superior izquierda), reproduce un gif con la presentación de GAMEBOY además de encenderse el led simulando que la consola esta ON.
 
-<img src="./Img/apagada.png" alt="Consola encendida" style="width: 289.5px;"> 
-<img src="./Img/gameBoyEncendida.png" alt="Consola encendida" style="width: 300px;">
+![apagada](./Img/apagada.png){ width=290 } ![encendida](./Img/gameBoyEncendida.png){ width=300 }
+
+<!-- <img src="./Img/apagada.png" alt="Consola encendida" style="width: 289.5px;"> 
+<img src="./Img/gameBoyEncendida.png" alt="Consola encendida" style="width: 300px;"> -->
 
 
 ##### <span style="font-family:Aria-lNarrow">2º- A continuación se mostrará una lista de juegos.
@@ -89,16 +89,20 @@
 
 ##### <span style="font-family:Aria-lNarrow">3º- Selecciona el juego deseado y reproducirá un pequeño gif del juego en cuestión. Soy consciente de que la pantalla de la GameBoy Pocket no tiene color, aún así he añadido gifs a color.
 
-<img src="./Img/superMario.png" alt="Texto Alternativo" style="width: 200px;">
+![superMario](./Img/superMario.png){ width=200 } ![tetris](./Img/tetris.png){ width=200 } ![zelda](./Img/zelda.png){ width=200 }
+
+![pokemon](./Img/pokemonAmarillo.png){ width=200 } ![donkeyKong](./Img/donkeyKong.png){ width=200 } ![metroid](./Img/metroid.png){ width=200 }
+
+
+<!-- <img src="./Img/superMario.png" alt="Texto Alternativo" style="width: 200px;">
 <img src="./Img/tetris.png" alt="Texto Alternativo" style="width: 200px;">
 <img src="./Img/zelda.png" alt="Texto Alternativo" style="width: 200px;">
 <img src="./Img/pokemonAmarillo.png" alt="Texto Alternativo" style="width: 200px;">
 <img src="./Img/donkeyKong.png" alt="Texto Alternativo" style="width: 200px;">
-<img src="./Img/metroid.png" alt="Texto Alternativo" style="width: 200px;">
+<img src="./Img/metroid.png" alt="Texto Alternativo" style="width: 200px;"> -->
 
 
 ##### <span style="font-family:Aria-lNarrow">4º- Al volver a presionar en el boton de encendido, apagará la consola y el led volverá a apagarse junto con la pantalla y la consola retornará a su estado inicial.
-
 
 <br>
 
@@ -112,11 +116,7 @@
 
 <img src="./Img/responsive.png" alt="Texto Alternativo" style="width: 500px;">
 
-
-
-
-
-<br><br><br><br>
+<br><br>
 
 ### <span style= "color:#d11911">Repositorio GitHub
 <a id="Repositorio"></a>
