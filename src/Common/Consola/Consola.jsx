@@ -24,7 +24,6 @@ export const Consola = () => {
     "Pokemon Amarillo",
     "Donkey Kong",
     "Super Metroid",
-    // Agrega los demás juegos aquí
   ]);
   const [indiceJuego, setIndiceJuego] = useState(0);
   const [juegosVisible, setJuegosVisible] = useState(true);
@@ -39,7 +38,6 @@ export const Consola = () => {
     "Pokemon Amarillo": pokemonAmarilloGif,
     "Donkey Kong": donkeyKongGif,
     "Super Metroid": superMetroidGif,
-    // Añade más juegos y GIFs aquí
   };
 
   const [gifJuego, setGifJuego] = useState(null);
@@ -107,12 +105,6 @@ export const Consola = () => {
         reproducirGif();
       }
     }
-  };
-
-  const handleClickB = () => {
-    setReproduciendoGif(false); // Detener reproducción de gif
-    setGifVisible(false);
-    setJuegosVisible(true);
   };
 
   return (
