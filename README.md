@@ -35,7 +35,10 @@
 
 #### <span style="font-family:Aria-lNarrow">La GameBoy Pocket fué fabricada por Nintendo y lanzada al mercado en 1996 en Japón y EEUU y en 1997 en Europa. Este modelo es una modificación de la Game Boy clásica. Comparada con el modelo clásico, la Pocket tenía un tamaño mucho más pequeño.
 
-![Caja-GameBoy](./Img/gameBoyOriginal4.jpeg)
+<p align="center">
+<img src="./Img/gameBoyOriginal2.png" alt="original" style="width: 300px;">
+<img src="./Img/gameBoyOriginal3.png" alt="LocalHost" style="width: 225px;">
+</p>
 
 <br><br>
 
@@ -87,13 +90,11 @@
 
 ##### <span style="font-family:Aria-lNarrow">2º- A continuación se mostrará una lista de juegos.
 
+<p align="center">
 <img src="./Img/listaDeJuegos.png" alt="Texto Alternativo" style="width: 400px;">
+</p>
 
 ##### <span style="font-family:Aria-lNarrow">3º- Selecciona el juego deseado y reproducirá un pequeño gif del juego en cuestión. Soy consciente de que la pantalla de la GameBoy Pocket no tiene color, aún así he añadido gifs a color.
-
-<!-- ![superMario](./Img/superMario.png){ width=200 } ![tetris](./Img/tetris.png){ width=200 } ![zelda](./Img/zelda.png){ width=200 }
-
-![pokemon](./Img/pokemonAmarillo.png){ width=200 } ![donkeyKong](./Img/donkeyKong.png){ width=200 } ![metroid](./Img/metroid.png){ width=200 } -->
 
 <p align="center">
 <img src="./Img/superMario.png" alt="Texto Alternativo" style="width: 200px;">
@@ -117,7 +118,9 @@
 
 <br>
 
+<p align="center">
 <img src="./Img/responsive.png" alt="Texto Alternativo" style="width: 500px;">
+</p>
 
 <br><br>
 
