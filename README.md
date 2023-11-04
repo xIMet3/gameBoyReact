@@ -30,6 +30,9 @@
 
 <br><br><br><br>
 
+### <span style= "color:#d11911">Acerca de<a id="Acerca"></a>
+
+
 #### <span style="font-family:Aria-lNarrow">La GameBoy Pocket fué fabricada por Nintendo y lanzada al mercado en 1996 en Japón y EEUU y en 1997 en Europa. Este modelo es una modificación de la Game Boy clásica. Comparada con el modelo clásico, la Pocket tenía un tamaño mucho más pequeño.
 
 ![Caja-GameBoy](./Img/gameBoyOriginal4.jpeg)
