@@ -12,6 +12,7 @@ import donkeyKongGif from "../../../Gif/donkey-kong.gif"
 import superMetroidGif from "../../../Gif/metroid-super.gif"
 
 export const Consola = () => {
+  // Definicion de estados usando el hook useState
   const [encendidoActivado, setEncendidoActivado] = useState(false);
   const [ledRojo, setLedRojo] = useState(false);
   const [gifVisible, setGifVisible] = useState(false);
@@ -27,8 +28,9 @@ export const Consola = () => {
   ]);
   const [indiceJuego, setIndiceJuego] = useState(0);
   const [juegosVisible, setJuegosVisible] = useState(true);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Inicializa el hook de navegacion
 
+  // Objeto que mapea nombres de juegos a rutas de archivos de imagen
   const gifs = {
     "Super Mario World": superMarioWorldGif,
     "Tetris": tetrisGif,
@@ -40,20 +42,22 @@ export const Consola = () => {
     "Super Metroid": superMetroidGif,
   };
 
+  // Estado para el gif del juego actual
   const [gifJuego, setGifJuego] = useState(null);
 
+  // Funcion que maneja los clics en botones
   const handleClick = (tipo) => {
     if (tipo === "Encendido") {
       if (encendidoActivado) {
         setEncendidoActivado(false);
         setLedRojo(false);
-        setGifJuego(null); // Agregado: Reiniciar gifJuego a null
+        setGifJuego(null); //Reiniciar gifJuego a null
         setGifVisible(false);
         setJuegosVisible(true);
       } else {
         setEncendidoActivado(true);
         setLedRojo(true);
-        setGifJuego(encendidoGif); // Agregado: Cambiar a encendidoGif
+        setGifJuego(encendidoGif); //Cambiar a encendidoGif
         setGifVisible(true);
         setJuegosVisible(false);
         setTimeout(() => {
@@ -73,6 +77,7 @@ export const Consola = () => {
     console.log(encendidoActivado);
   };
 
+  // Efecto que actualiza el juego actual cada 95 segundos si la consola esta encendida
   useEffect(() => {
     const interval = setInterval(() => {
       if (encendidoActivado) {
@@ -81,10 +86,11 @@ export const Consola = () => {
         );
       }
     }, 95000);
-
+    // Limpia el intervalo cuando el componente se desmonta
     return () => clearInterval(interval);
   }, [encendidoActivado, juegos]);
 
+  // Funcion que reproduce el gif del juego actual
   const reproducirGif = () => {
     setGifVisible(true);
     setJuegosVisible(false);
@@ -95,6 +101,7 @@ export const Consola = () => {
     }, 16000);
   };
 
+  // Maneja el clic en el boton "A"
   const handleClickA = () => {
     if (ledRojo && !gifVisible) {
       const juegoSeleccionado = juegos[indiceJuego];
@@ -109,6 +116,7 @@ export const Consola = () => {
 
   return (
     <div className="paginaEntera">
+      {/* Boton de encendido */}
       <div className="parteBotonEncendido">
         <div className="vacio9"></div>
         <div className="botonEncendido">
@@ -120,7 +128,7 @@ export const Consola = () => {
           ></div>
         </div>
       </div>
-
+        {/* Consola entera */}
       <div className="cuerpoConsola">
         <div className="bordeArriba">
           <div className="onOff">
@@ -128,7 +136,7 @@ export const Consola = () => {
             <div className="on">● ON</div>
           </div>
         </div>
-
+            {/* Zona pantalla */}
         <div className="partePantalla">
           <div className="pantallaExterior">
             <div className="margenTop"></div>
@@ -189,7 +197,7 @@ export const Consola = () => {
             </div>
           </div>
         </div>
-
+          {/* Parte central con el logo y las botoneras */}
         <div className="parteCentral">
           <div className="parteLogo">
             <div className="vacio3"></div>
@@ -200,6 +208,7 @@ export const Consola = () => {
           </div>
 
           <div className="parteBotonera">
+            {/* Cruceta */}
             <div className="parteCruceta">
               <div className="cruceta">
                 ◦
@@ -241,7 +250,7 @@ export const Consola = () => {
                 </div>
               </div>
             </div>
-
+              {/* Botonera A y B */}
             <div className="botoneraAYB">
               <div className="vacio4"></div>
               <div className="botoneraB">
@@ -261,7 +270,7 @@ export const Consola = () => {
             </div>
           </div>
         </div>
-
+          {/* Parte baja con Select, Start y altavoz */}
         <div className="parteBaja">
           <div className="vacio2"></div>
           <div className="parteSelect">

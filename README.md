@@ -18,7 +18,7 @@
 - ### [Funcionamiento 📖](#Funcionamiento)
 - ### [Responsive📱](#Responsive)
 - ### [Repositorio GitHub 💾](#Repositorio)
-- ### [Linkedin](#Linkedin)
+- ### [Linkedin 📬](#Linkedin)
 
 
 <br><br><br><br>
