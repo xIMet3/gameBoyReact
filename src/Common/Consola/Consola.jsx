@@ -5,6 +5,11 @@ import encendidoGif from "../../../Gif/encendidoGif.gif";
 import superMarioWorldGif from "../../../Gif/superMarioWorld.gif";
 import tetrisGif from "../../../Gif/tetris.gif";
 import zeldaGif from "../../../Gif/zelda.gif";
+import pokemonRojoGif from "../../../Gif/pokemonRojo.gif";
+import pokemonAzulGif from "../../../Gif/pokemonAzul.gif";
+import pokemonAmarilloGif from "../../../Gif/pokemonAmarillo.gif";
+import donkeyKongGif from "../../../Gif/donkey-kong.gif"
+import superMetroidGif from "../../../Gif/metroid-super.gif"
 
 export const Consola = () => {
   const [encendidoActivado, setEncendidoActivado] = useState(false);
@@ -14,6 +19,11 @@ export const Consola = () => {
     "Super Mario World",
     "Tetris",
     "The Legend of Zelda",
+    "Pokemon Rojo",
+    "Pokemon Azul",
+    "Pokemon Amarillo",
+    "Donkey Kong",
+    "Super Metroid",
     // Agrega los demás juegos aquí
   ]);
   const [indiceJuego, setIndiceJuego] = useState(0);
@@ -22,8 +32,13 @@ export const Consola = () => {
 
   const gifs = {
     "Super Mario World": superMarioWorldGif,
-    Tetris: tetrisGif,
+    "Tetris": tetrisGif,
     "The Legend of Zelda": zeldaGif,
+    "Pokemon Rojo": pokemonRojoGif,
+    "Pokemon Azul": pokemonAzulGif,
+    "Pokemon Amarillo": pokemonAmarilloGif,
+    "Donkey Kong": donkeyKongGif,
+    "Super Metroid": superMetroidGif,
     // Añade más juegos y GIFs aquí
   };
 
@@ -46,7 +61,7 @@ export const Consola = () => {
         setTimeout(() => {
           setGifVisible(false);
           setJuegosVisible(true);
-        }, 10000);
+        }, 2300);
       }
     } else if (tipo === "Arriba") {
       setIndiceJuego((prevIndice) =>
@@ -79,7 +94,7 @@ export const Consola = () => {
     setTimeout(() => {
       setGifVisible(false);
       setJuegosVisible(true);
-    }, 2300);
+    }, 16000);
   };
 
   const handleClickA = () => {
@@ -95,7 +110,9 @@ export const Consola = () => {
   };
 
   const handleClickB = () => {
+    setReproduciendoGif(false); // Detener reproducción de gif
     setGifVisible(false);
+    setJuegosVisible(true);
   };
 
   return (
